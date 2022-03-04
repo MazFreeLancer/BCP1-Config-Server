@@ -1,0 +1,93 @@
+server:
+  port: 9010
+
+spring:
+  cloud:
+    config:
+      server:
+        bootstrap: false
+        git:
+          clone-on-start: true
+          # EJEMPLO: repositorio local
+          #          default-label: master -> ESTO INDICA LA RAMA EN GIT (EJM: MASTER , MAIN)
+          #          uri: C:\Users\HNAVARSA\Documents\devtools\sts-workspace\pruebas\config-local
+
+          #EJEMPLO BITBUCKET
+          # repositorio remoto (Auth: App Password) [forma 1]
+          #uri: https://bitbucket.org/henry_navarrosayas/config.git
+          #default-label: main
+          #username: hnavarsa
+          #password: pGFJuaFD52RGkTTTM6KJ
+          #basedir: config-dir-bitbucket
+
+          uri: git@github.com:MazFreeLancer/BCP1-Config-Data.git
+          default-label: main
+          basedir: config-dir-github
+          ignore-local-ssh-settings: true
+          passphrase: bcp1configdata
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            Proc-Type: 4,ENCRYPTED
+            DEK-Info: AES-128-CBC,08FA706B9172F450F947BBF7AFDD4BA6
+
+            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
+            -----END RSA PRIVATE KEY-----
+
+# Configuracion Hecha por mi cuenta
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          default-label: main
+#          uri: https://github.com/MazFreeLancer/BCP1-Config-Data
+#  application:
+#    name: Config-Server
