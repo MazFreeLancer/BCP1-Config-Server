@@ -19,8 +19,8 @@ spring:
           #username: hnavarsa
           #password: pGFJuaFD52RGkTTTM6KJ
           #basedir: config-dir-bitbucket
-          uri: https://github.com/josesuri/BC01P01-CONFIG-DATA
-          #uri: https://github.com/MazFreeLancer/BCP1-Config-Data
+          #uri: https://github.com/josesuri/BC01P01-CONFIG-DATA
+          uri: https://github.com/MazFreeLancer/BCP1-Config-Data
           #uri: git@github.com:MazFreeLancer/BCP1-Config-Data.git
           default-label: main
           basedir: config-dir-github
